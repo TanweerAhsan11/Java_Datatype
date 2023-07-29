@@ -8,9 +8,9 @@ public class PalindromeNumber {
         int temp=a;
         while(a!=0)
         {
-            int lastDigit = a%10;
-            reverse = reverse*10 + lastDigit;
-            a=a/10;
+            int lastDigit = a%10;                // finding last digit
+            reverse = reverse*10 + lastDigit;    //adding last digit to get reverse
+            a=a/10;                              //removing last digit everytime so that we can get one decreased number.
         }
         // System.out.println("reverse = " +reverse + "a="+temp);
        
