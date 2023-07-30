@@ -4,6 +4,10 @@ public class TrailingZerosInFactorial {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int trailZeros = 0;
+<<<<<<< HEAD
+=======
+        
+>>>>>>> ecbdbbb65527ac85ac48cc7bdf7a9affa2a4bbcf
 /*      int fact=1;
         for(int i=2;i<=n;i++){
             fact = fact*i;
@@ -21,7 +25,16 @@ public class TrailingZerosInFactorial {
             trailZeros=trailZeros + n/i;
         }
         System.out.println(trailZeros);
+        // NOTE :- This will not give appropriate solution for larger value > 12.
+*/ 
+        
+        // Effective way. 
+        for(int i =5; i<=n;i=i*5)
+        {
+            trailZeros=trailZeros + n/i;
+        }
+        System.out.println(trailZeros);
     }
 }
 
-// NOTE :- This will not give appropriate solution for larger value > 12.
+
