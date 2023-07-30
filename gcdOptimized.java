@@ -9,7 +9,7 @@ public class gcdOptimized {
         }
         else
         {
-            return gcd(b,a%b);
+            return gcd(b,a%b);    //a%b will always less than b since it will give remainder.
         }
     }
     public static void main(String args[])
@@ -21,3 +21,11 @@ public class gcdOptimized {
         System.out.println(c);
     }
 }
+
+/*
+    gcd(10,15)         // gcd(a,b)
+    gcd(15,10)        // gcd(b,a%b)
+    gcd(10,5)        // gcd(b,a%b)
+    gcd(5,0)        // b==0 return a = 5
+    
+*/
